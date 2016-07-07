@@ -1,0 +1,401 @@
+##############################################################################
+#
+#               Configuration File for the Sybase SQL Server
+#
+#               Please read the System Administration Guide (SAG)
+#               before changing any of the values in this file.
+#
+##############################################################################
+
+
+
+[Configuration Options]
+
+[General Information]
+        config file version = DEFAULT
+
+[Backup/Recovery]
+        recovery interval in minutes = DEFAULT
+        print recovery information = DEFAULT
+        tape retention in days = DEFAULT
+        max concurrently recovered db = DEFAULT
+        number of checkpoint tasks = DEFAULT
+        enable backupserver HA = DEFAULT
+
+[Cache Manager]
+        number of oam trips = DEFAULT
+        number of index trips = DEFAULT
+        memory alignment boundary = DEFAULT
+        global async prefetch limit = DEFAULT
+        global cache partition number = DEFAULT
+        extended cache size = DEFAULT
+
+[Named Cache:default data cache]
+        cache size = 4690 M
+        cache status = default data cache
+        cache replacement policy = DEFAULT
+        local cache partition number = DEFAULT
+
+[32K I/O Buffer Pool]
+        pool size = 59.0000m
+        wash size = DEFAULT
+        local async prefetch limit = DEFAULT
+
+[Named Cache:tempdb_cache]
+        cache size = 64 M
+        cache status = mixed cache
+        cache replacement policy = DEFAULT
+        local cache partition number = DEFAULT
+
+[Meta-Data Caches]
+        number of open databases = 20
+        number of open objects = 4000
+        open object spinlock ratio = DEFAULT
+        number of open indexes = 5610
+        open index hash spinlock ratio = DEFAULT
+        open index spinlock ratio = DEFAULT
+        partition groups = DEFAULT
+        partition spinlock ratio = DEFAULT
+        number of open partitions = 5610
+
+[Disk I/O]
+        disk i/o structures = 1024
+        number of large i/o buffers = 50
+        page utilization percent = DEFAULT
+        number of devices = 100
+        disable disk mirroring = DEFAULT
+        allow sql server async i/o = DEFAULT
+        number of disk tasks = DEFAULT
+        enable hp posix async i/o = DEFAULT
+
+[Languages]
+        disable character set conversions = DEFAULT
+
+[Unicode]
+        enable unicode normalization = DEFAULT
+        enable surrogate processing = DEFAULT
+        enable unicode conversions = DEFAULT
+        size of unilib cache = DEFAULT
+
+[Network Communication]
+        default network packet size = DEFAULT
+        max network packet size = 4096
+        remote server pre-read packets = DEFAULT
+        number of remote connections = DEFAULT
+        number of remote logins = DEFAULT
+        number of remote sites = DEFAULT
+        max number network listeners = DEFAULT
+        tcp no delay = DEFAULT
+        send doneinproc tokens = DEFAULT
+        allow sendmsg = DEFAULT
+        syb_sendmsg port number = DEFAULT
+        allow remote access = DEFAULT
+        number of network tasks = DEFAULT
+        network polling mode = DEFAULT
+
+[O/S Resources]
+        max async i/os per engine = DEFAULT
+        max async i/os per server = DEFAULT
+
+[Query Tuning]
+        optimization goal = DEFAULT
+        allow backward scans = DEFAULT
+        abstract plan load = DEFAULT
+        abstract plan dump = DEFAULT
+        abstract plan replace = DEFAULT
+        abstract plan cache = DEFAULT
+        sampling percent = DEFAULT
+        number of histogram steps = DEFAULT
+        enable sort-merge join and JTC = DEFAULT
+        number of worker processes = 50
+        memory per worker process = DEFAULT
+        max parallel degree = DEFAULT
+        max scan parallel degree = DEFAULT
+        max repartition degree = DEFAULT
+        max resource granularity = DEFAULT
+        enable metrics capture = DEFAULT
+        optimization timeout limit = DEFAULT
+        metrics lio max = DEFAULT
+        metrics pio max = DEFAULT
+        metrics elap max = DEFAULT
+        metrics exec max = DEFAULT
+        sproc optimize timeout limit = DEFAULT
+        min pages for parallel scan = DEFAULT
+        prod-consumer overlap factor = DEFAULT
+        enable literal autoparam = 1
+        max query parallel degree = DEFAULT
+        cost of a logical io = DEFAULT
+        cost of a physical io = DEFAULT
+        cost of a cpu unit = DEFAULT
+        auto query tuning = DEFAULT
+        enable query tuning mem limit = DEFAULT
+        query tuning plan executions = DEFAULT
+        enable query tuning time limit = DEFAULT
+        max buffers per lava operator = DEFAULT
+        enable merge join = DEFAULT
+        mnc_full_index_filter = DEFAULT
+        capture missing statistics = DEFAULT
+        enable compatibility mode = DEFAULT
+        procedure deferred compilation = DEFAULT
+        optimizer level = DEFAULT
+        search engine timeout factor = DEFAULT
+        deferred name resolution = DEFAULT
+        builtin date strings = DEFAULT
+        enable deferred parallel = DEFAULT
+
+[Physical Resources]
+
+[Physical Memory]
+        max memory = 3045376
+        additional network memory = 303104
+        shared memory starting address = DEFAULT
+        allocate max shared memory = 1
+        dynamic allocation on demand = DEFAULT
+        lock shared memory = DEFAULT
+        heap memory per user = 49152
+        engine memory log size = DEFAULT
+        compression memory size = DEFAULT
+        kernel resource memory = DEFAULT
+
+[Processors]
+        max online engines = DEFAULT
+        max online Q engines = DEFAULT
+        number of engines at startup = DEFAULT
+        number of Q engines at startup = DEFAULT
+        statement cache size = 76032
+
+[SQL Server Administration]
+        procedure cache size = 152268
+        default database size = DEFAULT
+        identity burning set factor = DEFAULT
+        allow nested triggers = DEFAULT
+        allow updates to system tables = DEFAULT
+        default fill factor percent = DEFAULT
+        default exp_row_size percent = DEFAULT
+        number of mailboxes = DEFAULT
+        number of messages = DEFAULT
+        number of alarms = DEFAULT
+        number of pre-allocated extents = DEFAULT
+        event buffers per engine = DEFAULT
+        cpu accounting flush interval = DEFAULT
+        i/o accounting flush interval = DEFAULT
+        sql server clock tick length = DEFAULT
+        runnable process search count = DEFAULT
+        i/o polling process count = DEFAULT
+        time slice = 200
+        cpu grace time = DEFAULT
+        number of sort buffers = DEFAULT
+        size of auto identity column = DEFAULT
+        identity grab size = DEFAULT
+        housekeeper free write percent = DEFAULT
+        enable housekeeper GC = DEFAULT
+        sysstatistics flush interval = DEFAULT
+        allow resource limits = DEFAULT
+        number of aux scan descriptors = DEFAULT
+        SQL Perfmon Integration = DEFAULT
+        license information = DEFAULT
+        text prefetch size = DEFAULT
+        enable HA = DEFAULT
+        i/o batch size = DEFAULT
+        enable semantic partitioning = DEFAULT
+        enable compression = DEFAULT
+        compression info pool size = DEFAULT
+        capture compression statistics = DEFAULT
+        enable xml = DEFAULT
+        enable webservices = DEFAULT
+        enable job scheduler = DEFAULT
+        job scheduler tasks = DEFAULT
+        job scheduler interval = DEFAULT
+        js job output width = DEFAULT
+        percent database for history = DEFAULT
+        percent history free = DEFAULT
+        percent database for output = DEFAULT
+        percent output free = DEFAULT
+        maximum job output = DEFAULT
+        enable sql debugger = DEFAULT
+        identity reservation size = DEFAULT
+        kernel mode = DEFAULT
+        max transfer history = DEFAULT
+        disable varbinary truncation = DEFAULT
+        enable console logging = DEFAULT
+
+[User Environment]
+        number of user connections = 100
+        stack size = 120832
+        stack guard size = DEFAULT
+        permission cache entries = DEFAULT
+        user log cache size = DEFAULT
+        user log cache spinlock ratio = DEFAULT
+        session tempdb log cache size = DEFAULT
+        max nesting level = DEFAULT
+        number of backup connections = DEFAULT
+        enable pci = DEFAULT
+        max pci slots = DEFAULT
+        pci memory size = DEFAULT
+        transfer utility memory size = DEFAULT
+        column default cache size = DEFAULT
+        replication agent memory size = DEFAULT
+        max native threads per engine = DEFAULT
+        messaging memory = DEFAULT
+        enable real time messaging = DEFAULT
+        histogram tuning factor = DEFAULT
+        rtm thread idle wait period = DEFAULT
+
+[Lock Manager]
+        number of locks = 100000
+        deadlock checking period = 800
+        lock spinlock ratio = DEFAULT
+        lock address spinlock ratio = DEFAULT
+        lock table spinlock ratio = DEFAULT
+        lock hashtable size = DEFAULT
+        cluster redundancy level = DEFAULT
+        lock scheme = DEFAULT
+        lock wait period = DEFAULT
+        read committed with lock = DEFAULT
+        print deadlock information = DEFAULT
+        deadlock retries = DEFAULT
+        page lock promotion HWM = DEFAULT
+        page lock promotion LWM = DEFAULT
+        page lock promotion PCT = DEFAULT
+        row lock promotion HWM = DEFAULT
+        row lock promotion LWM = DEFAULT
+        row lock promotion PCT = DEFAULT
+
+[Security Related]
+        systemwide password expiration = DEFAULT
+        audit queue size = DEFAULT
+        curread change w/ open cursors = DEFAULT
+        allow procedure grouping = DEFAULT
+        select on syscomments.text = DEFAULT
+        auditing = DEFAULT
+        current audit table = DEFAULT
+        suspend audit when device full = DEFAULT
+        enable row level access = DEFAULT
+        check password for digit = DEFAULT
+        minimum password length = DEFAULT
+        maximum failed logins = DEFAULT
+        enable ssl = DEFAULT
+        FIPS login password encryption = DEFAULT
+        restricted decrypt permission = DEFAULT
+        net password encryption reqd = DEFAULT
+        automatic master key access = DEFAULT
+        unified login required = DEFAULT
+        use security services = DEFAULT
+        msg confidentiality reqd = DEFAULT
+        msg integrity reqd = DEFAULT
+        enable pam user auth = DEFAULT
+        enable ldap user auth = DEFAULT
+        enable encrypted columns = DEFAULT
+        secure default login = DEFAULT
+        enable logins during recovery = DEFAULT
+
+[Extended Stored Procedure]
+        esp unload dll = DEFAULT
+        esp execution priority = DEFAULT
+        esp execution stacksize = DEFAULT
+        xp_cmdshell context = DEFAULT
+        start mail session = DEFAULT
+        start xp server during boot = DEFAULT
+
+[Error Log]
+        event logging = DEFAULT
+        log audit logon success = DEFAULT
+        log audit logon failure = DEFAULT
+        event log computer name = DEFAULT
+
+[Rep Agent Thread Administration]
+        enable rep agent threads = DEFAULT
+
+[Component Integration Services]
+        enable cis = DEFAULT
+        cis connect timeout = DEFAULT
+        cis bulk insert batch size = DEFAULT
+        max cis remote connections = DEFAULT
+        cis idle connection timeout = DEFAULT
+        cis packet size = DEFAULT
+        cis cursor rows = DEFAULT
+        enable snmp = DEFAULT
+        enable file access = DEFAULT
+        cis bulk insert array size = DEFAULT
+        enable full-text search = DEFAULT
+        cis rpc handling = DEFAULT
+
+[Java Services]
+        enable java = DEFAULT
+        size of process object heap = 4000
+        size of shared class heap = 8000
+        size of global fixed heap = DEFAULT
+        number of java sockets = DEFAULT
+
+[DTM Administration]
+        enable DTM = DEFAULT
+        enable xact coordination = DEFAULT
+        xact coordination interval = DEFAULT
+        number of dtx participants = DEFAULT
+        strict dtm enforcement = DEFAULT
+        txn to pss ratio = DEFAULT
+        dtm lock timeout period = DEFAULT
+        dtm detach timeout period = DEFAULT
+
+[Diagnostics]
+        dump on conditions = DEFAULT
+        maximum dump conditions = DEFAULT
+        number of dump threads = DEFAULT
+        number of ccbs = DEFAULT
+        caps per ccb = DEFAULT
+        average cap size = DEFAULT
+
+[Monitoring]
+        enable monitoring = DEFAULT
+        sql text pipe active = DEFAULT
+        sql text pipe max messages = DEFAULT
+        plan text pipe active = DEFAULT
+        plan text pipe max messages = DEFAULT
+        statement pipe active = DEFAULT
+        statement pipe max messages = DEFAULT
+        errorlog pipe active = DEFAULT
+        errorlog pipe max messages = DEFAULT
+        deadlock pipe active = DEFAULT
+        deadlock pipe max messages = DEFAULT
+        lock timeout pipe max messages = DEFAULT
+        lock timeout pipe active = DEFAULT
+        wait event timing = DEFAULT
+        process wait events = DEFAULT
+        object lockwait timing = DEFAULT
+        SQL batch capture = DEFAULT
+        statement statistics active = DEFAULT
+        per object statistics active = DEFAULT
+        max SQL text monitored = DEFAULT
+        performance monitoring option = DEFAULT
+        enable stmt cache monitoring = DEFAULT
+
+[Shared Disk Cluster]
+        CIPC regular message pool size = DEFAULT
+        CIPC large message pool size = DEFAULT
+        DMA object pool size = DEFAULT
+        workload manager cache size = DEFAULT
+        idle migration timeout = DEFAULT
+        session migration timeout = DEFAULT
+        automatic cluster takeover = DEFAULT
+        quorum heartbeat interval = DEFAULT
+        quorum heartbeat retries = DEFAULT
+        cluster heartbeat interval = DEFAULT
+        cluster heartbeat retries = DEFAULT
+        cluster vote timeout = DEFAULT
+        enable i/o fencing = DEFAULT
+
+[Application Functionality]
+        enable functionality group = DEFAULT
+        select for update = DEFAULT
+        streamlined dynamic SQL = DEFAULT
+        enable inline default sharing = DEFAULT
+        enable permissive unicode = DEFAULT
+        quoted identifier enhancements = DEFAULT
+        suppress js max task message = DEFAULT
+
+[Thread Pool:syb_default_pool]
+        number of threads = 1
+        idle timeout = 100
+
+[Thread Pool:syb_blocking_pool]
+        number of threads = 4

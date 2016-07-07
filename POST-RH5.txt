@@ -1,0 +1,337 @@
+#####################################################
+#               trhhk8slsp01b02
+#####################################################
+
+License File
+NODEID = 930a220e trhhk8slsp01b02 x86_64
+
+trhhk8slsp01b02 triarch.cnf =   62439   206
+
+trhhk8slsp01b02 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp01b02       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8slsp01b02       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8slsp01b02       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8slsp01b02       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8slsp01b02       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8slsp01b02 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8slsp01b02 Template Version =       4.20.05,
+
+trhhk8slsp01b02,hHKF,Up,0
+trhhk8slsp01b02,hHKT,Up,0
+trhhk8slsp01b02,IDN_RDF,Up,3628
+
+HK8_02_RHD_HK02004,3628
+
+trhhk8slsp01b02 DACS Enabled =   True,
+trhhk8slsp01b02 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp02b02
+#####################################################
+
+License File
+NODEID = 930a240e trhhk8slsp02b02 x86_64
+
+trhhk8slsp02b02 triarch.cnf =   62439   206
+
+trhhk8slsp02b02 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp02b02       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8slsp02b02       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8slsp02b02       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8slsp02b02       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8slsp02b02       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8slsp02b02 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8slsp02b02 Template Version =       4.20.05,
+
+trhhk8slsp02b02,hHKF,Up,0
+trhhk8slsp02b02,hHKT,Up,0
+trhhk8slsp02b02,IDN_RDF,Up,1346
+
+HK8_02_RHB_HK30921_002,0
+HK8_02_RHD_HK27811,0
+HK8_02_RHD_HK26951,1346
+
+trhhk8slsp02b02 DACS Enabled =   True,
+trhhk8slsp02b02 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp08b03
+#####################################################
+
+License File
+NODEID = 930a260e trhhk8slsp08b03 x86_64
+
+trhhk8slsp08b03 triarch.cnf =   62439   206
+
+trhhk8slsp08b03 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp08b03       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8slsp08b03       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8slsp08b03       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8slsp08b03       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8slsp08b03       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8slsp08b03 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8slsp08b03 Template Version =       4.20.05,
+
+trhhk8slsp08b03,IDN_RDF,Up,23
+trhhk8slsp08b03,hEDD,Up,0
+trhhk8slsp08b03,hHKT,Up,0
+trhhk8slsp08b03,hHKF,Up,0
+
+HK8_03_RHB_CN95932,3
+HK8_03_RHB_SWVPNDEMO,22
+
+trhhk8slsp08b03 DACS Enabled =   True,
+trhhk8slsp08b03 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp01b04
+#####################################################
+
+License File
+NODEID = 930a280e trhhk8slsp01b04 x86_64
+
+trhhk8slsp01b04 triarch.cnf =   62439   206
+
+trhhk8slsp01b04 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp01b04       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8slsp01b04       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8slsp01b04       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8slsp01b04       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8slsp01b04       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8slsp01b04 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8slsp01b04 Template Version =       4.20.05,
+
+trhhk8slsp01b04,IDN_RDF,Up,81
+trhhk8slsp01b04,hEDD,Up,0
+
+dbu2,81
+
+trhhk8slsp01b04 DACS Enabled =   True,
+trhhk8slsp01b04 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b06
+#####################################################
+
+License File
+NODEID = 930a340e trhhk8sldp01b06 x86_64
+
+trhhk8sldp01b06 triarch.cnf =   62439   206
+
+trhhk8sldp01b06 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b06       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8sldp01b06       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8sldp01b06       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8sldp01b06       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8sldp01b06       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8sldp01b06 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b06 Template Version =       4.20.05,
+
+trhhk8sldp01b06,hEDD,Up,0
+trhhk8sldp01b06,IDN_RDF,Up,2955
+
+HK8_06_RHP_HK04020,2955
+
+trhhk8sldp01b06 DACS Enabled =   True,
+trhhk8sldp01b06 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b07
+#####################################################
+
+License File
+NODEID = 930a360e trhhk8sldp01b07 x86_64
+
+trhhk8sldp01b07 triarch.cnf =   62439   206
+
+trhhk8sldp01b07 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b07       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8sldp01b07       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8sldp01b07       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8sldp01b07       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8sldp01b07       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8sldp01b07 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b07 Template Version =       4.20.05,
+
+trhhk8sldp01b07,hEDD,Up,0
+trhhk8sldp01b07,IDN_RDF,Up,0
+
+dbu2,0
+
+trhhk8sldp01b07 DACS Enabled =   True,
+trhhk8sldp01b07 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b09
+#####################################################
+
+License File
+NODEID = 930a3b0e trhhk8sldp01b09 x86_64
+
+trhhk8sldp01b09 triarch.cnf =   62439   206
+
+trhhk8sldp01b09 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindMainThread : 2
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindRRCPReadThread : 7
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindWriteThread.1 : 4
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindWriteThread.2 : 6
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindWriteThread.3 : 8
+trhhk8sldp01b09   1      trhhk8sldp01b09*ads*bindWriteThread.4 : 10
+
+trhhk8sldp01b09 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b09 Template Version =       4.20.05,
+
+trhhk8sldp01b09,hEDD,Up,0
+trhhk8sldp01b09,IDN_RDF,Up,0
+
+
+trhhk8sldp01b09 DACS Enabled =   True,
+trhhk8sldp01b09 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b12
+#####################################################
+
+License File
+NODEID = 930a410e trhhk8sldp01b12 x86_64
+
+trhhk8sldp01b12 triarch.cnf =   62439   206
+
+trhhk8sldp01b12 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindMainThread : 2
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindRRCPReadThread : 7
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindWriteThread.1 : 4
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindWriteThread.2 : 6
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindWriteThread.3 : 8
+trhhk8sldp01b12   1      trhhk8sldp01b12*ads*bindWriteThread.4 : 10
+
+trhhk8sldp01b12 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b12 Template Version =       4.20.05,
+
+trhhk8sldp01b12,hEDD,Up,0
+trhhk8sldp01b12,IDN_RDF,Up,0
+
+
+trhhk8sldp01b12 DACS Enabled =   True,
+trhhk8sldp01b12 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b13
+#####################################################
+
+License File
+NODEID = 930a430e trhhk8sldp01b13 x86_64
+
+trhhk8sldp01b13 triarch.cnf =   62439   206
+
+trhhk8sldp01b13 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindMainThread : 2
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindRRCPReadThread : 7
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindWriteThread.1 : 4
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindWriteThread.2 : 6
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindWriteThread.3 : 8
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindWriteThread.4 : 10
+
+trhhk8sldp01b13 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b13 Template Version =       4.20.05,
+
+trhhk8sldp01b13,hEDD,Up,0
+trhhk8sldp01b13,IDN_RDF,Up,0
+
+
+trhhk8sldp01b13 DACS Enabled =   True,
+trhhk8sldp01b13 DACS Connected =         True,
+
+No ADH configured to run

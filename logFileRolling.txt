@@ -1,0 +1,68 @@
+#!/usr/bin/perl
+# Author        : Tugrul Ozbay CJC-it Ltd
+# Date          : 5th Jan 2015
+# Reason        : 
+# Version       : 1
+# Strict        : Extremely
+# Warnings      : None.
+#
+use strict;
+
+my $dir = "/var/log";            # Location of the Log file
+my $logfile = "log.txt";        # Name of the Log file
+my $maxsize = 2_000_000;        # Max size before rotating
+my $maxlogs = 10;            # Number of rotates before archive
+my $archivetotal = 5;            # Number of logs to archive
+my ($s, $m, $h, $dayOfMonth, $month,                # Create date from
++ local time
+    $yearOffset, $dow, $doy, $dst) = localtime();
+my $year = 1900 + $yearOffset;
+my $date = $year * 1000 + ($month + 1) * 100 + $dayOfMonth;    # Forma
++t Date
+my $tarme;    # Store names of files to be archived
+
+### Switch to directory where log file is located
+chdir $dir;
+
+### Check Size of log
+if(-s $logfile > $maxsize)
+{
+    ### Rotate old logs
+    for(my $i = $maxlogs - 1;$i > 0;$i--)
+    {
+        if(-e "${logfile}.$i")
+        {
+            my $j = $i + 1;
+            rename "${logfile}.$i", "${logfile}.$j";
+        }
+    }
+    rename "$logfile", "${logfile}.1";
+    `echo "" >> $logfile`;
+    
+    ### Archive logs
+    if(-e "${logfile}.$maxlogs")
+    {
+        for(my $i = $maxlogs - ($archivetotal - 1), my $j = 1;$i <= $m
++axlogs;$i++, $j++)
+        {
+            rename "${logfile}.$i", "${logfile}.${date}.$j";
+            $tarme .= "${logfile}.${date}.$j ";
+        }
+        
+        my $i = 1;
+        my $tarfile = "${logfile}.${date}.tar";
+        while ( (-e $tarfile) || (-e "${tarfile}.gz") )
+        {
+            $tarfile = "${logfile}.${date}.tar.$i";
+            $i++;
+        }
+        
+        `tar -czf $tarfile $tarme`;
+        `rm $tarme`;
+        `gzip $tarfile`;
+    }
+}
+else
+{
+    print "Log file too small to rotate.\n\n";
+}

@@ -1,0 +1,319 @@
+#####################################################
+#               trhhk8slsp01b02
+#####################################################
+
+License File
+NODEID = 930a220e trhhk8slsp01b02 x86_64
+
+trhhk8slsp01b02 triarch.cnf =   62439   206
+
+trhhk8slsp01b02 TR_LICENSE.cnf =        27253    28
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp01b02       Instance=1     Actual Bindings=4,12
+trhhk8slsp01b02       Instance=1     Actual Bindings=3,11
+trhhk8slsp01b02       Instance=1     Actual Bindings=1,9
+trhhk8slsp01b02       Instance=1     Actual Bindings=2,10
+trhhk8slsp01b02       Instance=1     Actual Bindings=7,15
+trhhk8slsp01b02       Instance=1     Actual Bindings=0,8
+
+trhhk8slsp01b02 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8slsp01b02 Template Version =       4.10.15,
+
+trhhk8slsp01b02,RWFTEST1,Down,0
+trhhk8slsp01b02,hHKF,Up,0
+trhhk8slsp01b02,hHKS,Down,0
+trhhk8slsp01b02,hHKT,Up,0
+trhhk8slsp01b02,IDN_RDF,Up,50126
+
+HK8_02_RHD_JP09003,0
+HK8_02_RHD_HK02004,3650
+HK8_02_RHB_HK34865,64614
+
+trhhk8slsp01b02 DACS Enabled =   True,
+trhhk8slsp01b02 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp02b02
+#####################################################
+
+License File
+NODEID = 930a240e trhhk8slsp02b02 x86_64
+
+trhhk8slsp02b02 triarch.cnf =   62439   206
+
+trhhk8slsp02b02 TR_LICENSE.cnf =        27253    28
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp02b02       Instance=1     Actual Bindings=4,12
+trhhk8slsp02b02       Instance=1     Actual Bindings=3,11
+trhhk8slsp02b02       Instance=1     Actual Bindings=1,9
+trhhk8slsp02b02       Instance=1     Actual Bindings=2,10
+trhhk8slsp02b02       Instance=1     Actual Bindings=7,15
+trhhk8slsp02b02       Instance=1     Actual Bindings=0,8
+
+trhhk8slsp02b02 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8slsp02b02 Template Version =       4.10.15,
+
+trhhk8slsp02b02,RWFTEST1,Down,0
+trhhk8slsp02b02,IDN_RDF,Up,1350
+trhhk8slsp02b02,hHKT,Up,0
+trhhk8slsp02b02,hHKF,Up,0
+trhhk8slsp02b02,hHKS,Down,0
+
+HK8_02_RHD_HK27811,0
+HK8_02_RHB_HK30921_002,0
+HK8_02_RHD_HK26951,1350
+
+trhhk8slsp02b02 DACS Enabled =   True,
+trhhk8slsp02b02 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp08b03
+#####################################################
+
+License File
+NODEID = 930a260e trhhk8slsp08b03 x86_64
+
+trhhk8slsp08b03 triarch.cnf =   62439   206
+
+trhhk8slsp08b03 TR_LICENSE.cnf =        27253    28
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp08b03       Instance=1     Actual Bindings=4,12
+trhhk8slsp08b03       Instance=1     Actual Bindings=3,11
+trhhk8slsp08b03       Instance=1     Actual Bindings=1,9
+trhhk8slsp08b03       Instance=1     Actual Bindings=2,10
+trhhk8slsp08b03       Instance=1     Actual Bindings=7,15
+trhhk8slsp08b03       Instance=1     Actual Bindings=0,8
+
+trhhk8slsp08b03 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8slsp08b03 Template Version =       4.10.15,
+
+trhhk8slsp08b03,RWFTEST1,Down,0
+trhhk8slsp08b03,hHKT,Up,0
+trhhk8slsp08b03,hHKS,Down,0
+trhhk8slsp08b03,hHKF,Up,0
+trhhk8slsp08b03,hEDD,Up,0
+trhhk8slsp08b03,IDN_RDF,Up,23
+
+HK8_03_RHB_SWVPNDEMO,22
+HK8_03_RHB_CN95932,3
+
+trhhk8slsp08b03 DACS Enabled =   True,
+trhhk8slsp08b03 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8slsp01b04
+#####################################################
+
+License File
+NODEID = 930a280e trhhk8slsp01b04 x86_64
+
+trhhk8slsp01b04 triarch.cnf =   62439   206
+
+trhhk8slsp01b04 TR_LICENSE.cnf =        27253    28
+
+Log Errors
+
+ADS Bindings
+
+trhhk8slsp01b04       Instance=1     Actual Bindings=2       bindMainThread : 2
+trhhk8slsp01b04       Instance=1     Actual Bindings=7       bindRRCPReadThread : 7
+trhhk8slsp01b04       Instance=1     Actual Bindings=4       bindWriteThread.1 : 4
+trhhk8slsp01b04       Instance=1     Actual Bindings=6       bindWriteThread.2 : 6
+trhhk8slsp01b04       Instance=1     Actual Bindings=1       bindWriteThread.3 : 1
+
+trhhk8slsp01b04 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8slsp01b04 Template Version =       4.10.15,
+
+trhhk8slsp01b04,IDN_RDF,Up,0
+trhhk8slsp01b04,hEDD,Up,0
+
+
+trhhk8slsp01b04 DACS Enabled =   True,
+trhhk8slsp01b04 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b06
+#####################################################
+
+License File
+NODEID = 930a340e trhhk8sldp01b06 x86_64
+
+trhhk8sldp01b06 triarch.cnf =   62439   206
+
+trhhk8sldp01b06 TR_LICENSE.cnf =        48390    27
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b06       Instance=1     Actual Bindings=4,12
+trhhk8sldp01b06       Instance=1     Actual Bindings=3,11
+trhhk8sldp01b06       Instance=1     Actual Bindings=1,9
+trhhk8sldp01b06       Instance=1     Actual Bindings=2,10
+trhhk8sldp01b06       Instance=1     Actual Bindings=7,15
+trhhk8sldp01b06       Instance=1     Actual Bindings=0,8
+
+trhhk8sldp01b06 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8sldp01b06 Template Version =       4.10.15,
+
+trhhk8sldp01b06,RWFTEST1,Down,0
+trhhk8sldp01b06,IDN_RDF,Up,3003
+
+HK8_06_RHP_HK04020,3003
+
+trhhk8sldp01b06 DACS Enabled =   True,
+trhhk8sldp01b06 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b07
+#####################################################
+
+License File
+NODEID = 930a360e trhhk8sldp01b07 x86_64
+
+trhhk8sldp01b07 triarch.cnf =   62439   206
+
+trhhk8sldp01b07 TR_LICENSE.cnf =        48390    27
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b07       Instance=1     Actual Bindings=4,12
+trhhk8sldp01b07       Instance=1     Actual Bindings=3,11
+trhhk8sldp01b07       Instance=1     Actual Bindings=1,9
+trhhk8sldp01b07       Instance=1     Actual Bindings=2,10
+trhhk8sldp01b07       Instance=1     Actual Bindings=7,15
+trhhk8sldp01b07       Instance=1     Actual Bindings=0,8
+
+trhhk8sldp01b07 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8sldp01b07 Template Version =       4.10.15,
+
+trhhk8sldp01b07,RWFTEST1,Down,0
+trhhk8sldp01b07,IDN_RDF,Up,3
+
+P2P_POPA,0
+dbu3,0
+dbu1,0
+dbu2,0
+HK_EIKON_11,3
+
+trhhk8sldp01b07 DACS Enabled =   True,
+trhhk8sldp01b07 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b09
+#####################################################
+
+License File
+NODEID = 930a3b0e trhhk8sldp01b09 x86_64
+
+trhhk8sldp01b09 triarch.cnf =   62439   206
+
+trhhk8sldp01b09 TR_LICENSE.cnf =        48390    27
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b09       Instance=1     Actual Bindings=4,12
+trhhk8sldp01b09       Instance=1     Actual Bindings=3,11
+trhhk8sldp01b09       Instance=1     Actual Bindings=1,9
+trhhk8sldp01b09       Instance=1     Actual Bindings=2,10
+trhhk8sldp01b09       Instance=1     Actual Bindings=7,15
+trhhk8sldp01b09       Instance=1     Actual Bindings=0,8
+
+trhhk8sldp01b09 ADS version =    /opt/reuters/SOFTWARE/ads2.2.1.E2.linux.tis
+
+trhhk8sldp01b09 Template Version =       4.10.15,
+
+trhhk8sldp01b09,RWFTEST1,Down,0
+trhhk8sldp01b09,IDN_RDF,Up,0
+
+
+trhhk8sldp01b09 DACS Enabled =   True,
+trhhk8sldp01b09 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b13
+#####################################################
+
+License File
+NODEID = 930a430e trhhk8sldp01b13 x86_64
+
+trhhk8sldp01b13 triarch.cnf =   62439   206
+
+trhhk8sldp01b13 TR_LICENSE.cnf =        48390    27
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindMainThread : 2
+trhhk8sldp01b13   1      trhhk8sldp01b13*ads*bindRRCPReadThread : 7
+
+trhhk8sldp01b13 ADS version =    /opt/reuters/SOFTWARE/ads2.4.0.E1.linux.tis
+
+trhhk8sldp01b13 Template Version =       4.10.15,
+
+trhhk8sldp01b13,hEDD,Up,0
+trhhk8sldp01b13,IDN_RDF,Up,88
+
+xtra9,88
+
+trhhk8sldp01b13 DACS Enabled =   True,
+trhhk8sldp01b13 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+
+
+

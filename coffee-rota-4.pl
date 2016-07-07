@@ -27,7 +27,7 @@ my $week = int(($yday+1-$wday)/7);
 chomp $week;
 #
 # TUG TEST'ings
-# $week = 5555555555555555555555555555555555555552;
+# $week = 52;
 #
 # print $week;
 # Add 1 if today isn't Saturday
@@ -313,8 +313,8 @@ sub send_mail {
 
         my $mailDir = "/data01/home/cjcadmin/scripts/mailAlert";
         my $sender = 'coffeeRota@cjcit.com';
-        my $recipient = 'tugrul.ozbay@cjcit.com';
-        # my $recipient = 'tugrul.ozbay@cjcit.com flynn.gardener@cjcit.com brian.daly@cjcit.com paul.kossowski@cjcit.com dave.willis@cjcit.com sam.grayston@cjcit.com'                           ;
+        # my $recipient = 'tugrul.ozbay@cjcit.com';
+        my $recipient = 'tugrul.ozbay@cjcit.com flynn.gardener@cjcit.com brian.daly@cjcit.com paul.kossowski@cjcit.com dave.willis@cjcit.com sam.grayston@cjcit.com'                           ;
 
         open LOG, "< $log";             # opens my log file
         chomp (my @output = <LOG>);     # cleans my output log
@@ -328,6 +328,10 @@ sub send_mail {
 
 
 }
+#
+#
+#
+# ################# END ########################
 #
 #
 #

@@ -1,0 +1,40 @@
+ADS & ADH UPGRADE procedure 
+==============================
+
+Check distributionConfig and hostFiles
+
+•	Jump onto site Management server (e.g trhty6susbd001a   Tokyo/TY6 or HK8 trhhk8susbd001a (HK8) )  
+	(and su to cjcadmin - D@....)
+
+•	cd /data01/home/cjcadmin/scripts/perl/postUpgradeChecks; [then run]  ./ preUpgradeChecks.pl
+	(modify output with a ‘pre’)
+
+•	cd /reuters/SOFTWARE/config; [then run] ./copyFiles.pl      
+	(go via menu and select choices like REDHAT Release, Arch etc)
+
+•	[now run a distribution] ./distributeConfig.pl
+	(copies over TR_LICENSE and rmds.cnf from /reuters/SOFTWARE/config/local – select carefully your boxes etc)
+
+
+	---------RESTART all server Processes----------
+
+
+•	[now run a postConfig check] cd /data01/home/cjcadmin/scripts/perl/postUpgradeChecks; ./ copyUpgradeChecks.pl
+	Then rename the file with a  “post” at the beginning.
+
+•	Compare the files using a diff or a notepad+ comparison tool.
+
+
+
+REFERENCE
+=========================================================================================================================
+Config files as below
+
+#ls "/reuters/SOFTWARE/config/file_distribution_area/hostFiles/"
+
+hostFiles.tar                         weekOne.ADH.2.4.1.E2.Upgrade-RHEL5    weekThree.ADS.2.4.1.E2.Upgrade-RHEL5
+hosts.wayne                           weekOne.ADS.2.4.1.E2.Upgrade-RHEL5    weekTwo.ADS.2.4.1.E2.Upgrade-RHEL5
+map_col_status                        weekOne.ADS.2.4.1.E2.Upgrade-RHEL6    weekTwo.ADS.2.4.1.E2.Upgrade-RHEL6
+mgmt_Upgrade-RHEL5                    weekThree.ADH.2.4.1.E2.Upgrade-RHEL5
+
+	

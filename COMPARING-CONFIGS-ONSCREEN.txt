@@ -1,0 +1,83 @@
+#####################################################
+#               trhhk8sldp01b14
+#####################################################
+
+License File
+NODEID = 930a450e trhhk8sldp01b14 x86_64
+
+trhhk8sldp01b14 triarch.cnf =   62439   206
+
+trhhk8sldp01b14 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindMainThread : 2
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*1*bindItemThread : 12
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*2*bindItemThread : 13
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*3*bindItemThread : 14
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindRRCPReadThread : 8
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindTransportFilterThread : 15
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindWriteThread.1 : 4
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindWriteThread.2 : 6
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindWriteThread.3 : 7
+trhhk8sldp01b14   1      trhhk8sldp01b14*ads*bindWriteThread.4 : 1
+
+trhhk8sldp01b14 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b14 Template Version =       4.20.05,
+
+trhhk8sldp01b14,hEDD,Up,0
+trhhk8sldp01b14,IDN_RDF,Up,3
+
+xtra09,3
+
+trhhk8sldp01b14 DACS Enabled =   True,
+trhhk8sldp01b14 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
+#####################################################
+#               trhhk8sldp01b16
+#####################################################
+
+License File
+NODEID = 930a4b0e trhhk8sldp01b16 x86_64
+
+trhhk8sldp01b16 triarch.cnf =   62439   206
+
+trhhk8sldp01b16 TR_LICENSE.cnf =        39262    34
+
+Log Errors
+
+ADS Bindings
+
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindMainThread : 2
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*1*bindItemThread : 12
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*2*bindItemThread : 13
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*3*bindItemThread : 14
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindRRCPReadThread : 8
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindTransportFilterThread : 15
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindWriteThread.1 : 4
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindWriteThread.2 : 6
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindWriteThread.3 : 7
+trhhk8sldp01b16   1      trhhk8sldp01b16*ads*bindWriteThread.4 : 1
+
+trhhk8sldp01b16 ADS version =    /opt/reuters/SOFTWARE/ads2.4.1.E2.linux.tis.rrg
+
+trhhk8sldp01b16 Template Version =       4.20.05,
+
+trhhk8sldp01b16,hEDD,Up,0
+trhhk8sldp01b16,IDN_RDF,Up,0
+
+
+trhhk8sldp01b16 DACS Enabled =   True,
+trhhk8sldp01b16 DACS Connected =         True,
+
+No ADH configured to run
+
+
+
