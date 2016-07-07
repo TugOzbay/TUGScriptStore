@@ -18,15 +18,15 @@ use POSIX qw(ceil);
 
 BEGIN {   # Create header. Columns must be comma separated for ITRS Geneos netprobe parsing
           # Determine Operating system
-            if ( ($^O =~ /linux/i) || ($^O =~ /solaris/i) ){		#OS check
+            if ( ($^O =~ /linux/i) || ($^O =~ /solaris/i) ){
                 open(FILE, "ps -ef|") or die "Cannot run command ps -ef $!";
-                our $report = "./UNIX_billing_server_count";
-                open (OUTPUT, ">$report") or die "Cannot open $report $!";
+                our $report = "./billing_server_count";
+                                                                open (OUTPUT, ">$report") or die "Cannot open $report $!";
                 print OUTPUT "PROCESS NAME,INSTANCE COUNT,SERVER COUNT,SERVER_TYPE\n";
             }
-            elsif ( $^O =~ /MSWin/i ) {		# OS check windows !
+            elsif ( $^O =~ /MSWin/i ) {
                 open(FILE, "tasklist|") or die "Cannot run command taskset $!";
-                our $report = "./WIN_billing_server_count";
+                our $report = "./billing_server_count";
                 open (OUTPUT, ">$report") or die "Cannot open $report $!";
                 print OUTPUT "PROCESS NAME,INSTANCE COUNT,SERVER COUNT,SERVER_TYPE\n";
             }

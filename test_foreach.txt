@@ -1,0 +1,18 @@
+open (FILE, "ads.log") or die "can't open ads.log: $!";
+print " showing errors only now \n";
+for (my $c = 0; $c++; $c <=$error_count3)
+{
+ chomp $_;                              # clear up the result of each line before we begin
+        if (grep /error/i, $_)          # grep for /error/i   ignore case from each line $_
+        {
+                print $_;
+                push(@errors, $_);      # push each line which has error into array @errors
+                print @errors;
+        }
+
+        #print @errors;
+        #print " \n" ;
+        #print " \n" ;
+        #
+}
+
