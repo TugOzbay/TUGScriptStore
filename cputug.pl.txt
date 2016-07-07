@@ -1,0 +1,47 @@
+#!/usr/bin/perl
+# Author        : Tugrul Ozbay
+# Date          : 4th Mart 2014
+# Reason        : /proc/cpuinfo dosyasini okuyor ve net bilgi veriyor
+# Version       : 1.0
+# Strict        : hayir.
+# Warnings      : yoktur.
+#
+# Ne Yapiyor  :
+# Okuyor /proc/cpuinfo ve istedigin cpu hakkinda bilgi verir
+#
+# Kullanim Sekli :  ./cpu_tug.pl 0 1 6  (gosterir cpu 0, 1 ve 6)
+#
+#
+
+use strict;
+use warnings;
+
+my $dosya = "/proc/cpuinfo";    # dosyayi okuyor
+my %cpu_bilgisi;                # array kuruyor bilgi tutmak icin
+my %cpu_info_store;             # array kuruyor bilgi tutmak icin
+my $proc_num;                   # processor numarasini tutuyor
+my $temizle = `clear`;          # ekrani temizliyor
+
+
+
+print $temizle;                 # temizlemeyi gercekletitiyor
+
+open(FILE, "<$dosya") || die "Acamiyorum $dosya: $!";   # dosyayi aciyor|acamiyor
+
+while ( <FILE> ) {                                      # while dosya acikken
+    if ( /processor/ ){                                 # processor varsa is yap
+        $proc_num = (split /:/,$_)[1];                  # processor sisifdan, bol kolon ile, 1 sayisini dosyala.
+    }                                                   #  if kapanisi
+        elsif ( /vendor_id/ .. /cpu cores/ ) {          # els if: secenek yap vendor_id 'den cpu cores'a kadar, ve basla
+        $cpu_bilgisi{$proc_num} .= $_;                  # HASH yap. anahtar kelime:deger cift bilgi sakliyor. $proc_num anahtar,  degeri tutan elsif. .= ekliyor hash'e.
+    }                                                   # kapatiyorum
+}
+ foreach my $key (keys %cpu_bilgisi){                   # Her bilgi girisini run against variable cpu_bilgisi
+    foreach my $cpu (@ARGV) {                           # Her cpu numarasini ( ekle @ARGV)
+       if ( $key == $cpu ){                             # eger $anahtar $cpu ile bagdasirsa ...sonra....
+          print "\t\t\tPROCESSOR: $key\n$cpu_bilgisi{$key}\n";        # tabloya koy \ bas PROCESSOR $anahtar ve $cpu_bilgisi icerigini
+     }                                                                # kapat programi
+   }
+}
+#
+# uzulerek Son :-)

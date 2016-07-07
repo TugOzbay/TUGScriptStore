@@ -1,0 +1,156 @@
+TUGS SCRAP PAD
+---------------
+
+'
+differences in library files between 2 G8' boxes found :-
+
+ libstdc++.so.5.0.7 in :  0
+ libstdc++.so.5 in :  0
+
+
+ libstdc++.so.5.0.7 in : trhlo4sldp01a22.lib-versions.log    status:  0
+ libstdc++.so.5 in : trhlo4sldp01a22.lib-versions.log    status:  0
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+ 
+   ./adsmon -set StreamServiceMonitor serviceDB dumpDispatcherTables True
+   ./adsmon -set StreamServiceMonitor serviceDB dumpDispatcherTables True
+  
+
+
+# adsmon -mobprint
+
+
+ Instance: trhlo4sltp02a01.1.ads.serviceDB				<------ serviceDB
+       Class: StreamServiceMonitor					<------ set StreamServiceMonitor		
+Variables:
+     reorderDecodeErrors:          Counter:                0
+      reorderUpdatesSent:          Counter:                0
+ poolReorderBufExhausted:          Counter:                0
+ itemReorderBufExhausted:          Counter:                0
+sassServiceQueueTimerMilliseconds:          Numeric:               10
+    dumpDispatcherTables:          Boolean:            False		<---------------------------- dumpDispatcherTables True
+    updateDispatchFailed:          Counter:           956111
+freeReorderInfoPoolCount:            Gauge:             1000 (0,9223372036854775807)
+currentReorderInfoPoolSize:            Gauge:             1000 (0,9223372036854775807)
+    freeReorderPoolCount:            Gauge:             1000 (0,9223372036854775807)
+  currentReorderPoolSize:            Gauge:             1000 (0,9223372036854775807)
+enableServiceAggregation:   Boolean Config:            False 0 0
+                 suspend:   Boolean Config:            False 0 0
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+ #	./rmdstestclient -S tEDD -p 14002 -u rmdsTest -f /reuters/tools/infraTools/infra_tools0.0.1.L10/linux/xaa -v -I 2 -v
+ #nohup  ./rmdstestclient -S tEDD -p 14002 -u rmdsTest -f /reuters/tools/infraTools/infra_tools0.0.1.L10/linux/xaa -v -I 2 -v &
+
+
+
+fft testing
+------------
+radmin   13085 28956  0 09:32 pts/1    00:00:00 ./rmdstestclient -S hBIDN -u radmin -f sg -v -p 16001 -X -d 3
+radmin   29574 28956  2 09:11 pts/1    00:02:40 ./rmdstestclient -u rmdsTest -S hBIDN -f itgIDN -v -p 16001
+
+
+
+
+
+
+iperth test
+
+
+
+** RUN SERVER on (p2pd52) **
+=================================
+[root@p2pd52 mds]# ./iperf -s -p 51000 &
+
+[root@p2pd52 mds]# ps -ef | grep perf
+root      4353  3458  0 14:15 pts/1    00:00:00 iperf -s -p 51000
+
+Note: no config changes required here .. run binary manually
+
+
+[root@p2pd52 eng]# cat run_iperf_svr.sh
+../iperf -s -p 51000 &
+sleep 3
+ps -ef | grep perf
+
+
+
+
+** RUN on CLIENT (p2pd51) **
+===================================
+[root@p2pd51]# cd /usr/mds
+
+[root@p2pd51 mds]# cat IperfTest.pl | grep SERV
+$SERVER = "160.8.198.22";			<==== eth0 side of server p2pd52 - put server Backbone IP into client box.
+
+[root@p2pd51 mds]# ./IperfTest.pl 
+will now sleep for 5 seconds
+Note: you should see a minimum of 80% bandwidth.  i.e a 1gb network should show 800mb minimum.
+
+
+RESULTS
+===============
+[root@p2pd51 mds]# cat /tmp/IperfTestp2pd51
+
+Bidirectional Iperf test from p2pd51 to changeserver 160.8.198.22 Fri 04 Jan 2008 02:25:20 PM GMT
+Server listening on TCP port 51000
+TCP window size:  128 KByte (default)
+Client connecting to 160.8.198.22, TCP port 51000
+TCP window size: 16.0 KByte (default)
+p2pd51 160.8.198.21 port 48789 connected with changeserver 160.8.198.22 port 51000
+Interval       Transfer     Bandwidth
+ 0.0- 3.0 sec   328 MBytes   917 Mbits/sec
+
+
+
+
+
+NEW EDGE FEEDS
+================
+tozbay@trhlo4slsed003a# diff triarch.cnf-Jules-config      triarch.cnf
+6147c6147
+< trhlo4slsed003a.1*adh*edgeRoute.route*hEDD*appServiceName : ELEKTRON_EDGE
+---
+> trhlo4slsed003a.1*adh*edgeRoute.route*hEDD*appServiceName : ELEKTRON_DD
+6172c6172
+< trhlo4slsed003a.1*adh*edgeRoute.route*userName : user
+---
+> trhlo4slsed003a.1*adh*edgeRoute.route*userName : user1
+6174c6174
+< trhlo4slsed003a.1*adh*edgeRoute2.route*hEDD*appServiceName : ELEKTRON_EDGE
+---
+> trhlo4slsed003a.1*adh*edgeRoute2.route*hEDD*appServiceName : ELEKTRON_DD
+6199c6199
+< trhlo4slsed003a.1*adh*edgeRoute2.route*userName : user1
+---
+> trhlo4slsed003a.1*adh*edgeRoute2.route*userName : user2
+6424c6424
+< trhlo4slsed003b.1*adh*edgeRoute.route*hEDD*appServiceName : ELEKTRON_EDGE
+---
+> trhlo4slsed003b.1*adh*edgeRoute.route*hEDD*appServiceName : ELEKTRON_DD
+6449c6449
+< trhlo4slsed003b.1*adh*edgeRoute.route*userName : user
+---
+> trhlo4slsed003b.1*adh*edgeRoute.route*userName : user1
+6452c6452
+< trhlo4slsed003b.1*adh*edgeRoute2.route*hEDD*appServiceName : ELEKTRON_EDGE
+---
+> trhlo4slsed003b.1*adh*edgeRoute2.route*hEDD*appServiceName : ELEKTRON_DD
+6477c6477
+< trhlo4slsed003b.1*adh*edgeRoute2.route*userName : user1
+---
+> trhlo4slsed003b.1*adh*edgeRoute2.route*userName : user2
+
+

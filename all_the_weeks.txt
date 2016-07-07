@@ -1,0 +1,14 @@
+
+if ($week == 1||$week == 8||$week == 15||$week == 22||$week == 29||$week == 36||$week == 43||$week == 50) {             # works best [1]
+
+if ($week == 2||$week == 9||$week == 16||$week == 23||$week == 30||$week == 37||$week == 44||$week == 51) {             # works best [2]
+
+if ($week == 3||$week == 10||$week == 17||$week == 24||$week == 31||$week == 38||$week == 45||$week == 52) {            # works best [3]
+
+if ($week == 4||$week == 11||$week == 18||$week == 25||$week == 32||$week == 39||$week == 46 ) {                # works best [4]
+
+if ($week == 5||$week == 12||$week == 19||$week == 26||$week == 33||$week == 40||$week == 47) {         # works best [5]
+
+if ($week == 6||$week == 13||$week == 20||$week == 27||$week == 34||$week == 41||$week == 48) {         # works best [6]
+
+if ($week == 7||$week == 14||$week == 21||$week == 28||$week == 35||$week == 42||$week == 49) {         # works best [7]

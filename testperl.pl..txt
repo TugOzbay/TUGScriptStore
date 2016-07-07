@@ -1,0 +1,154 @@
+#!/usr/bin/perl
+# Author        : Tugrul Ozbay CJCit Ltd
+# Date          : 23rd June 2014 (day 173)
+# Reason        : Engineering Dept. Coffee Rota
+# Version       : 1
+# Strict        : Extremely
+# Warnings      : None.
+#
+#
+# Note: A variable is defined by the ($) symbol (scalar), 
+#       the (@) symbol (arrays), or the (%) symbol (hashes). 
+#
+use strict;
+use warnings;
+#
+my $timeData = localtime(time);
+# print "$timeData \n\n\n";
+my @timeDataArray = split (' ', $timeData);  
+#
+my @onlyDay = split ( ':' ,$timeDataArray[0]);
+foreach my $justDaySplit (@onlyDay)
+{
+	print "\n TODAY :=> -> $justDaySplit  \n\n"
+}
+#
+#
+# WEEK 1
+#
+# define my Strings
+my $Daystring1 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames1 = "DaveW,PaulK,TugO,BrianD,SamG,FlynnG";
+
+# transform above strings into arrays with a little cleanup.
+my @string1 = split('-', $Daystring1);
+my @names1  = split(',', $Engnames1);
+#
+#
+# my loop execution WEEK 1
+print " \n\n ==== WEEK 1 ==== \n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string1[$a]\n";  # This will print selected field
+	print "$names1[$a]\n\n";   # This will print ...
+
+}
+#print "$string1[$a]\n";  # This will print selected field
+print "$names1[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
+# WEEK 2
+#
+my $Daystring2 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames2 = "FlynnG,DaveW,PaulK,TugO,BrianD,SamG";
+#
+#transform above strings into arrays with a little cleanup.
+my @string2 = split('-', $Daystring2);
+my @names2  = split(',', $Engnames2);
+
+# my loop execution WEEK 2
+print " \n\n ==== WEEK 2 ==== \n\n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string2[$a]\n";  # This will print selected field
+	print "$names2[$a]\n\n";   # This will print ...
+
+}
+#print "$string2[$a]\n";  # This will print selected field
+print "$names2[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
+# WEEK 3
+#
+my $Daystring3 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames3 = "SamG,FlynnG,DaveW,PaulK,TugO,BrianD";
+#
+#transform above strings into arrays with a little cleanup.
+my @string3 = split('-', $Daystring3);
+my @names3  = split(',', $Engnames3);
+
+# my loop execution WEEK 3
+print " \n\n ==== WEEK 3 ==== \n\n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string3[$a]\n";  # This will print selected field
+	print "$names3[$a]\n\n";   # This will print ...
+
+}
+#print "$string3[$a]\n";  # This will print selected field
+print "$names3[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
+# WEEK 4
+#
+my $Daystring4 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames4 = "BrianD,SamG,FlynnG,DaveW,PaulK,TugO";
+#
+#transform above strings into arrays with a little cleanup.
+my @string4 = split('-', $Daystring4);
+my @names4  = split(',', $Engnames4);
+
+# my loop execution WEEK 4
+print " \n\n ==== WEEK 4 ==== \n\n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string4[$a]\n";  # This will print selected field
+	print "$names4[$a]\n\n";   # This will print ...
+
+}
+#print "$string4[$a]\n";  # This will print selected field
+print "$names4[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
+# WEEK 5
+#
+my $Daystring5 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames5 = "TugO,BrianD,SamG,FlynnG,DaveW,PaulK";
+#
+#transform above strings into arrays with a little cleanup.
+my @string5 = split('-', $Daystring5);
+my @names5  = split(',', $Engnames5);
+
+# my loop execution WEEK 5
+print " \n\n ==== WEEK 5 ==== \n\n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string5[$a]\n";  # This will print selected field
+	print "$names5[$a]\n\n";   # This will print ...
+
+}
+#print "$string5[$a]\n";  # This will print selected field
+print "$names5[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
+# WEEK 6
+#
+my $Daystring6 = "Monday-Tuesday-Wednesday-Thursday-Friday";
+my $Engnames6 = "PaulK,TugO,BrianD,SamG,FlynnG,DaveW";
+#
+#transform above strings into arrays with a little cleanup.
+my @string6 = split('-', $Daystring6);
+my @names6  = split(',', $Engnames6);
+
+# my loop execution WEEK 6
+print " \n\n ==== WEEK 6 ==== \n\n\n";
+for( $a = 0; $a < 5; $a = $a + 1 ){
+    #print "value of a: $a\n";
+	print "$string6[$a]\n";  # This will print selected field
+	print "$names6[$a]\n\n";   # This will print ...
+
+}
+#print "$string6[$a]\n";  # This will print selected field
+print "$names6[$a]	<--- ROTA Week off \n";   # This will print ...
+#
+#
